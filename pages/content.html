@@ -6,392 +6,237 @@
 <title>Content | Happiness in the Digital Age</title>
 <meta
 name="description"
-content="Explore practical content on AI, digital tools, creative workflows and better online life."
+content="Practical content on AI, digital products, workflows and better online life."
 />
+
 <style>
 :root {
---bg: #ffffff;
---text: #161616;
---muted: #666666;
---line: #e9e9e9;
---soft: #f6f6f6;
---max: 720px;
---radius: 18px;
---shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --bg: #ffffff;
+  --text: #161616;
+  --muted: #666666;
+  --line: #e9e9e9;
+  --soft: #f6f6f6;
+  --max: 720px;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-* {
-box-sizing: border-box;
-}
-
-html {
-scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
 
 body {
-margin: 0;
-background: var(--bg);
-color: var(--text);
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.55;
--webkit-font-smoothing: antialiased;
-text-rendering: optimizeLegibility;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
 }
 
 img {
-display: block;
-width: 100%;
-height: auto;
-border-radius: var(--radius);
+  width: 100%;
+  border-radius: var(--radius);
 }
 
 a {
-color: inherit;
-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .wrap {
-width: min(100% - 32px, var(--max));
-margin: 0 auto;
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
 }
 
 .site-header {
-position: sticky;
-top: 0;
-z-index: 20;
-background: rgba(255, 255, 255, 0.95);
-backdrop-filter: blur(10px);
-border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
 }
 
 .header-inner {
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 16px;
-padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
 }
 
 .brand img {
-width: 132px;
-border-radius: 0;
+  width: 132px;
 }
 
 .nav {
-display: flex;
-gap: 16px;
-flex-wrap: wrap;
-justify-content: flex-end;
+  display: flex;
+  gap: 16px;
 }
 
 .nav a {
-font-size: 0.95rem;
-color: var(--muted);
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
-.nav a:hover,
-.nav a.active {
-color: var(--text);
+.nav a.active,
+.nav a:hover {
+  color: var(--text);
 }
 
 main {
-padding: 28px 0 60px;
-}
-
-section {
-margin: 0 0 54px;
+  padding: 28px 0 60px;
 }
 
 .eyebrow {
-display: inline-block;
-font-size: 0.8rem;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-color: var(--muted);
-margin-bottom: 12px;
-}
-
-h1, h2, h3 {
-margin: 0 0 12px;
-line-height: 1.1;
-letter-spacing: -0.03em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+  display: block;
 }
 
 h1 {
-font-size: clamp(2rem, 7vw, 3.2rem);
-}
-
-h2 {
-font-size: clamp(1.45rem, 5vw, 2.1rem);
-}
-
-h3 {
-font-size: 1.08rem;
+  font-size: clamp(2rem, 7vw, 3rem);
+  margin: 0 0 12px;
 }
 
 p {
-margin: 0 0 14px;
-color: var(--muted);
-font-size: 1rem;
-}
-
-.lead {
-font-size: 1.08rem;
-color: #4d4d4d;
-}
-
-.panel {
-background: var(--soft);
-border: 1px solid var(--line);
-border-radius: 24px;
-padding: 20px;
-}
-
-.cards {
-display: grid;
-gap: 14px;
-margin-top: 18px;
-}
-
-.card {
-border: 1px solid var(--line);
-border-radius: 20px;
-padding: 18px;
-background: #fff;
-}
-
-.section-image {
-margin-top: 20px;
-box-shadow: var(--shadow);
+  color: var(--muted);
+  margin: 0 0 14px;
 }
 
 .list {
-display: grid;
-gap: 14px;
-margin-top: 18px;
+  margin-top: 28px;
+  display: grid;
+  gap: 14px;
 }
 
 .item {
-border: 1px solid var(--line);
-border-radius: 18px;
-padding: 18px;
-background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  background: #fff;
+}
+
+.item h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.section-image {
+  margin-top: 40px;
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  margin-top: 40px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 20px;
 }
 
 .actions {
-display: flex;
-flex-direction: column;
-gap: 12px;
-margin-top: 18px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .btn {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-min-height: 48px;
-padding: 0 18px;
-border-radius: 999px;
-border: 1px solid var(--text);
-font-weight: 600;
-font-size: 0.96rem;
-transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .btn-primary {
-background: var(--text);
-color: #fff;
+  background: var(--text);
+  color: #fff;
 }
 
 .btn-secondary {
-background: #fff;
-color: var(--text);
+  background: #fff;
+  color: var(--text);
 }
 
 .site-footer {
-border-top: 1px solid var(--line);
-padding: 26px 0 40px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
 }
 
 .footer-links {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-links a {
-color: var(--muted);
-font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .footer-note {
-color: var(--muted);
-font-size: 0.9rem;
-}
-
-@media (min-width: 760px) {
-.cards.two {
-grid-template-columns: repeat(2, 1fr);
-}
-
-.cards.three {
-grid-template-columns: repeat(3, 1fr);
-}
-
-.actions {
-flex-direction: row;
-flex-wrap: wrap;
-}
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 10px;
 }
 </style>
 </head>
-<body>
-<header class="site-header">
-<div class="wrap header-inner">
-<a class="brand" href="../index.html">
-<img src="../assets/images/logo.webp" alt="Happiness in the Digital Age logo" />
-</a>
 
-<nav class="nav" aria-label="Main navigation">
-<a class="active" href="content.html">Content</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-</nav>
-</div>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <img src="../assets/images/logo.webp" />
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="content.html">Content</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
 </header>
 
 <main class="wrap">
-<section aria-labelledby="content-title">
+
 <span class="eyebrow">Content</span>
-<h1 id="content-title">Practical content for better digital use.</h1>
-<p class="lead">
-Explore guides, categories and useful content on AI, digital tools, creative workflows
-and better online habits.
-</p>
-
-<img
-class="section-image"
-src="../assets/images/a5.webp"
-alt="Clean digital workspace with creative tools"
-/>
-</section>
-
-<section aria-labelledby="find-title">
-<div class="panel">
-<span class="eyebrow">What you will find</span>
-<h2 id="find-title">Clear categories. Useful starting points.</h2>
+<h1>Clear ideas for better digital work.</h1>
 <p>
-This page organizes the main areas of the portal so you can quickly find the kind of
-content most relevant to your work, projects or digital routine.
+Simple, practical content about AI, digital products and better online decisions.
 </p>
-</div>
-</section>
 
-<section aria-labelledby="categories-title">
-<span class="eyebrow">Categories</span>
-<h2 id="categories-title">Main content areas.</h2>
-
-<div class="cards two">
-<article class="card">
-<h3>AI and practical use</h3>
-<p>
-Clear ways to use AI across real tasks, daily work and better digital decision-making.
-</p>
-</article>
-
-<article class="card">
-<h3>Creative tools</h3>
-<p>
-Content on writing, image, video and other tools that support creation and execution.
-</p>
-</article>
-
-<article class="card">
-<h3>Digital workflows</h3>
-<p>
-Better systems, cleaner processes and more useful structures for digital work.
-</p>
-</article>
-
-<article class="card">
-<h3>Better online life</h3>
-<p>
-Practical ideas for a healthier and more intentional relationship with the web.
-</p>
-</article>
-</div>
-</section>
-
-<section aria-labelledby="featured-title">
-<span class="eyebrow">Featured guides</span>
-<h2 id="featured-title">Highlighted topics and starting points.</h2>
-
+<!-- LISTA DE POSTS (SEM IMAGEM) -->
 <div class="list">
-<article class="item">
-<h3>How to use AI tools more effectively</h3>
-<p>
-A practical entry point for people who want more useful results from AI without extra noise.
-</p>
-</article>
 
-<article class="item">
-<h3>Better systems for digital productivity</h3>
-<p>
-Methods, structures and habits that help reduce friction in day-to-day online work.
-</p>
-</article>
+  <a class="item" href="#">
+    <h3>How to create your first digital product with AI</h3>
+    <p>A simple path to move from idea to execution without overthinking.</p>
+  </a>
 
-<article class="item">
-<h3>Creative workflows across tools</h3>
-<p>
-Ways to combine writing, image and video tools with more clarity and better output.
-</p>
-</article>
-</div>
-</section>
+  <a class="item" href="#">
+    <h3>Why most people never make money online</h3>
+    <p>The real reason is not what you think — and how to fix it.</p>
+  </a>
 
-<section aria-labelledby="latest-title">
-<span class="eyebrow">Latest content</span>
-<h2 id="latest-title">New and upcoming content.</h2>
+  <a class="item" href="#">
+    <h3>How to use AI tools without getting overwhelmed</h3>
+    <p>A cleaner way to use tools with more clarity and better results.</p>
+  </a>
 
-<div class="cards three">
-<article class="card">
-<h3>Guide placeholder</h3>
-<p>
-Use this area to publish new articles, practical notes, comparisons or tool guides.
-</p>
-</article>
-
-<article class="card">
-<h3>Workflow placeholder</h3>
-<p>
-Another slot for future content categories, tutorials or structured learning paths.
-</p>
-</article>
-
-<article class="card">
-<h3>Insight placeholder</h3>
-<p>
-A simple block for future editorial pieces, recommendations or curated updates.
-</p>
-</article>
 </div>
 
+<!-- IMAGEM -->
 <img
 class="section-image"
-src="../assets/images/a1.webp"
-alt="Person working with laptop in a bright clean workspace"
+src="https://happinessinthedigitalage.digital/assets/images/a1.webp"
 />
-</section>
 
-<section aria-labelledby="next-title">
+<!-- NEXT -->
 <div class="panel">
 <span class="eyebrow">Next</span>
-<h2 id="next-title">Explore products and recommendations.</h2>
+<h2>Explore products and recommendations.</h2>
 <p>
-When you want practical digital resources beyond content, browse the selected products
-and recommendations available through the portal.
+When you want practical digital resources beyond content, browse the selected products and recommendations available through the portal.
 </p>
 
 <div class="actions">
@@ -399,7 +244,7 @@ and recommendations available through the portal.
 <a class="btn btn-secondary" href="about.html">About the portal</a>
 </div>
 </div>
-</section>
+
 </main>
 
 <footer class="site-footer">
@@ -413,5 +258,6 @@ and recommendations available through the portal.
 <p class="footer-note">© Happiness in the Digital Age</p>
 </div>
 </footer>
+
 </body>
 </html>
