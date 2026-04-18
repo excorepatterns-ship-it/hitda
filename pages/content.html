@@ -60,6 +60,7 @@ a {
 
 .brand img {
   width: 132px;
+  border-radius: 0;
 }
 
 .nav {
@@ -94,6 +95,13 @@ h1 {
   margin: 0 0 12px;
 }
 
+h2 {
+  font-size: clamp(1.45rem, 5vw, 2.1rem);
+  margin: 0 0 12px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
 p {
   color: var(--muted);
   margin: 0 0 14px;
@@ -110,6 +118,12 @@ p {
   border-radius: 18px;
   padding: 18px;
   background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .item h3 {
@@ -186,7 +200,7 @@ p {
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="../index.html">
-      <img src="../assets/images/logo.webp" />
+      <img src="../assets/images/logo.webp" alt="Happiness in the Digital Age logo" />
     </a>
 
     <nav class="nav">
@@ -205,33 +219,19 @@ p {
 Simple, practical content about AI, digital products and better online decisions.
 </p>
 
-<!-- LISTA DE POSTS (SEM IMAGEM) -->
 <div class="list">
-
-  <a class="item" href="#">
-    <h3>How to create your first digital product with AI</h3>
-    <p>A simple path to move from idea to execution without overthinking.</p>
+  <a class="item" href="post-first-digital-product.html">
+    <h3>Why Most People Never Make Their First Digital Sale (And What Actually Helps)</h3>
+    <p>Most first digital products do not fail because of bad ideas. They fail because the path from idea to offer is still too blurry.</p>
   </a>
-
-  <a class="item" href="#">
-    <h3>Why most people never make money online</h3>
-    <p>The real reason is not what you think — and how to fix it.</p>
-  </a>
-
-  <a class="item" href="#">
-    <h3>How to use AI tools without getting overwhelmed</h3>
-    <p>A cleaner way to use tools with more clarity and better results.</p>
-  </a>
-
 </div>
 
-<!-- IMAGEM -->
 <img
 class="section-image"
 src="https://happinessinthedigitalage.digital/assets/images/a1.webp"
+alt="Person working with laptop in a bright clean workspace"
 />
 
-<!-- NEXT -->
 <div class="panel">
 <span class="eyebrow">Next</span>
 <h2>Explore products and recommendations.</h2>
