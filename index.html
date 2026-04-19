@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happiness in the Digital Age</title>
+
+  <title>Happiness in the Digital Age | AI Tools, Digital Productivity and Creative Workflows</title>
   <meta
     name="description"
-    content="Practical guidance on AI, creative tools, digital productivity and smarter online life."
+    content="Practical guidance on AI tools, creative workflows, digital productivity and better online habits. Explore content, resources and digital products designed for a smarter digital life."
   />
+  <meta
+    name="keywords"
+    content="AI tools, digital productivity, creative workflows, online habits, digital tools, content workflows, AI for creators, smarter digital life"
+  />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Happiness in the Digital Age" />
+  <link rel="canonical" href="https://happinessinthedigitalage.digital/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Happiness in the Digital Age | AI Tools, Digital Productivity and Creative Workflows" />
+  <meta
+    property="og:description"
+    content="Practical guidance on AI tools, creative workflows, digital productivity and better online habits."
+  />
+  <meta property="og:url" content="https://happinessinthedigitalage.digital/" />
+  <meta property="og:site_name" content="Happiness in the Digital Age" />
+  <meta property="og:image" content="https://happinessinthedigitalage.digital/assets/images/a7.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Happiness in the Digital Age | AI Tools, Digital Productivity and Creative Workflows" />
+  <meta
+    name="twitter:description"
+    content="Practical guidance on AI tools, creative workflows, digital productivity and better online habits."
+  />
+  <meta name="twitter:image" content="https://happinessinthedigitalage.digital/assets/images/a7.webp" />
+
   <style>
     :root {
       --bg: #ffffff;
@@ -16,7 +43,7 @@
       --line: #e9e9e9;
       --soft: #f6f6f6;
       --accent: #111111;
-      --max: 720px;
+      --max: 760px;
       --radius: 18px;
       --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
@@ -34,7 +61,7 @@
       background: var(--bg);
       color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.55;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -97,7 +124,8 @@
       color: var(--muted);
     }
 
-    .nav a:hover {
+    .nav a:hover,
+    .nav a:focus {
       color: var(--text);
     }
 
@@ -127,14 +155,15 @@
       margin: 0 0 12px;
       line-height: 1.1;
       letter-spacing: -0.03em;
+      color: var(--text);
     }
 
     h1 {
-      font-size: clamp(2rem, 7vw, 3.6rem);
+      font-size: clamp(2.1rem, 7vw, 3.7rem);
     }
 
     h2 {
-      font-size: clamp(1.45rem, 5vw, 2.2rem);
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
     }
 
     h3 {
@@ -150,6 +179,7 @@
     .lead {
       font-size: 1.08rem;
       color: #4d4d4d;
+      max-width: 62ch;
     }
 
     .actions {
@@ -182,7 +212,8 @@
       color: var(--text);
     }
 
-    .btn:hover {
+    .btn:hover,
+    .btn:focus {
       transform: translateY(-1px);
     }
 
@@ -191,11 +222,6 @@
       border: 1px solid var(--line);
       border-radius: 24px;
       padding: 20px;
-    }
-
-    .stack {
-      display: grid;
-      gap: 16px;
     }
 
     .cards {
@@ -211,7 +237,8 @@
       background: #fff;
     }
 
-    .card p:last-child {
+    .card p:last-child,
+    .product p:last-child {
       margin-bottom: 0;
     }
 
@@ -237,6 +264,7 @@
       display: block;
       margin-bottom: 8px;
       font-size: 1rem;
+      color: var(--text);
     }
 
     .about-box {
@@ -261,9 +289,27 @@
       font-size: 0.95rem;
     }
 
+    .footer-links a:hover,
+    .footer-links a:focus {
+      color: var(--text);
+    }
+
     .footer-note {
       color: var(--muted);
       font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
 
     @media (min-width: 760px) {
@@ -281,11 +327,32 @@
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Happiness in the Digital Age",
+    "url": "https://happinessinthedigitalage.digital/",
+    "description": "Practical guidance on AI tools, creative workflows, digital productivity and better online habits.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Happiness in the Digital Age",
+    "url": "https://happinessinthedigitalage.digital/",
+    "logo": "https://happinessinthedigitalage.digital/assets/images/logo.webp"
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#">
+      <a class="brand" href="/" aria-label="Happiness in the Digital Age home">
         <img src="assets/images/logo.webp" alt="Happiness in the Digital Age logo" />
       </a>
 
@@ -300,10 +367,13 @@
   <main class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <span class="eyebrow">Digital clarity</span>
-        <h1 id="hero-title">Use digital tools better.</h1>
+        <span class="eyebrow">AI tools and digital productivity</span>
+        <h1 id="hero-title">Practical guidance for AI tools, digital productivity and creative workflows.</h1>
         <p class="lead">
-          Practical guidance on AI, creative tools, digital productivity and smarter online life.
+          Happiness in the Digital Age helps you use AI tools, creative systems and digital workflows with more clarity, less friction and better decisions.
+        </p>
+        <p>
+          Explore practical content, curated resources and digital products focused on smarter work, better online habits and a more intentional digital life.
         </p>
 
         <div class="actions">
@@ -321,31 +391,33 @@
     <section id="content" aria-labelledby="content-title">
       <div class="panel">
         <span class="eyebrow">What you will find here</span>
-        <h2 id="content-title">Practical guidance for work, creation and digital life.</h2>
+        <h2 id="content-title">Content about AI tools, creative systems and better digital work.</h2>
         <p>
-          This portal is built to help you use the digital environment with more clarity,
-          less friction and better decisions.
+          This site is built for people who want practical guidance on using digital tools more effectively across work, creativity and everyday online life.
+        </p>
+        <p>
+          The focus is simple: clearer workflows, better digital productivity, stronger creative output and healthier online habits without unnecessary noise.
         </p>
 
         <div class="cards">
           <article class="card">
-            <h3>AI and creative workflows</h3>
+            <h3>AI tools and creative workflows</h3>
             <p>
-              Learn how to use AI more effectively across writing, image, video and other creative tools.
+              Learn how to use AI more effectively across writing, image creation, video workflows and other creative tools.
             </p>
           </article>
 
           <article class="card">
-            <h3>Digital tools and systems</h3>
+            <h3>Digital tools and productivity systems</h3>
             <p>
-              Discover platforms, methods and resources that improve your output and reduce wasted effort.
+              Discover platforms, methods and resources that improve digital productivity, reduce wasted effort and support better output.
             </p>
           </article>
 
           <article class="card">
-            <h3>Better digital life</h3>
+            <h3>Smarter online habits</h3>
             <p>
-              Build a healthier, more intentional relationship with the web, your tools and your time.
+              Build a healthier, more intentional relationship with the web, your devices, your tools and your time.
             </p>
           </article>
         </div>
@@ -362,8 +434,10 @@
       <span class="eyebrow">Digital balance</span>
       <h2 id="life-title">Use technology with more clarity, not more noise.</h2>
       <p>
-        Better output does not come only from better tools. It also comes from cleaner systems,
-        better habits and a more intentional use of your digital environment.
+        Better results do not come only from better software. They also come from cleaner systems, stronger habits and a more intentional way of working online.
+      </p>
+      <p>
+        That includes choosing the right AI tools, simplifying your digital environment and building creative workflows that support focus instead of distraction.
       </p>
 
       <img
@@ -375,24 +449,23 @@
 
     <section id="products" aria-labelledby="products-title">
       <span class="eyebrow">Featured products</span>
-      <h2 id="products-title">Selected tools, products and digital resources.</h2>
+      <h2 id="products-title">Selected digital products, tools and practical resources.</h2>
       <p>
-        A curated mix of practical products, recommendations and digital solutions designed to improve
-        how you work and create.
+        Browse a curated mix of digital products, recommendations and practical resources designed to improve how you work, create and use online tools.
       </p>
 
       <div class="products">
         <article class="product">
           <strong>Guides and practical resources</strong>
           <p>
-            Focused digital materials for better use of AI, content workflows and creative tools.
+            Focused digital materials for better use of AI tools, content workflows, creative systems and everyday productivity.
           </p>
         </article>
 
         <article class="product">
-          <strong>Recommended products</strong>
+          <strong>Recommended products and tools</strong>
           <p>
-            Carefully selected tools and offers that support productivity, creation and digital clarity.
+            Carefully selected products and digital tools that support smarter workflows, creative clarity and better online work.
           </p>
         </article>
       </div>
@@ -408,23 +481,23 @@
       <span class="eyebrow">About</span>
       <h2 id="about-title">A portal for better digital decisions.</h2>
       <p>
-        Happiness in the Digital Age is a content and product portal focused on practical digital clarity —
-        from AI use to better workflows, better tools and healthier online habits.
+        Happiness in the Digital Age is a content and product portal focused on practical digital clarity, from AI use and creative workflows to digital productivity, better tools and healthier online habits.
+      </p>
+      <p>
+        The goal is to help you work with more intention, create with less friction and build a better relationship with the digital environment around you.
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="pages/content.html">Content</a>
         <a href="pages/products.html">Products</a>
         <a href="pages/about.html">About</a>
-      </div>
+      </nav>
 
-      <p class="footer-note">
-        © Happiness in the Digital Age
-      </p>
+      <p class="footer-note">© Happiness in the Digital Age</p>
     </div>
   </footer>
 </body>
