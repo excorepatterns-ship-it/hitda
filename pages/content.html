@@ -1,263 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Content | Happiness in the Digital Age</title>
-<meta
-name="description"
-content="Practical content on AI, digital products, workflows and better online life."
-/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-:root {
-  --bg: #ffffff;
-  --text: #161616;
-  --muted: #666666;
-  --line: #e9e9e9;
-  --soft: #f6f6f6;
-  --max: 720px;
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
+  <title>Content | Happiness in the Digital Age | AI, Digital Products and Better Online Life</title>
+  <meta
+    name="description"
+    content="Explore practical content on AI, digital products, workflows and better online life. Read clear, useful articles designed to support smarter digital decisions."
+  />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Happiness in the Digital Age" />
+  <link rel="canonical" href="https://happinessinthedigitalage.digital/pages/content.html" />
 
-* { box-sizing: border-box; }
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Content | Happiness in the Digital Age | AI, Digital Products and Better Online Life" />
+  <meta
+    property="og:description"
+    content="Practical content on AI, digital products, workflows and better online life."
+  />
+  <meta property="og:url" content="https://happinessinthedigitalage.digital/pages/content.html" />
+  <meta property="og:site_name" content="Happiness in the Digital Age" />
+  <meta property="og:image" content="https://happinessinthedigitalage.digital/assets/images/a1.webp" />
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.55;
-}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Content | Happiness in the Digital Age | AI, Digital Products and Better Online Life" />
+  <meta
+    name="twitter:description"
+    content="Practical content on AI, digital products, workflows and better online life."
+  />
+  <meta name="twitter:image" content="https://happinessinthedigitalage.digital/assets/images/a1.webp" />
 
-img {
-  width: 100%;
-  border-radius: var(--radius);
-}
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #161616;
+      --muted: #666666;
+      --line: #e9e9e9;
+      --soft: #f6f6f6;
+      --max: 760px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.wrap {
-  width: min(100% - 32px, var(--max));
-  margin: 0 auto;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.site-header {
-  border-bottom: 1px solid var(--line);
-  background: #fff;
-}
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+    }
 
-.brand img {
-  width: 132px;
-  border-radius: 0;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-.nav {
-  display: flex;
-  gap: 16px;
-}
+    .wrap {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
 
-.nav a {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
 
-.nav a.active,
-.nav a:hover {
-  color: var(--text);
-}
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 0;
+    }
 
-main {
-  padding: 28px 0 60px;
-}
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
 
-.eyebrow {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 10px;
-  display: block;
-}
+    .brand img {
+      width: 132px;
+      border-radius: 0;
+    }
 
-h1 {
-  font-size: clamp(2rem, 7vw, 3rem);
-  margin: 0 0 12px;
-}
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-h2 {
-  font-size: clamp(1.45rem, 5vw, 2.1rem);
-  margin: 0 0 12px;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-}
+    .nav a {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
 
-p {
-  color: var(--muted);
-  margin: 0 0 14px;
-}
+    .nav a.active,
+    .nav a:hover,
+    .nav a:focus {
+      color: var(--text);
+    }
 
-.list {
-  margin-top: 28px;
-  display: grid;
-  gap: 14px;
-}
+    main {
+      padding: 28px 0 60px;
+    }
 
-.item {
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 18px;
-  background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    section {
+      margin: 0 0 54px;
+    }
 
-.item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
+    .eyebrow {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 10px;
+      display: block;
+    }
 
-.item h3 {
-  margin: 0 0 6px;
-  font-size: 1.05rem;
-}
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 12px;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
 
-.section-image {
-  margin-top: 40px;
-  box-shadow: var(--shadow);
-}
+    h1 {
+      font-size: clamp(2.05rem, 7vw, 3.2rem);
+    }
 
-.panel {
-  margin-top: 40px;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 20px;
-}
+    h2 {
+      font-size: clamp(1.45rem, 5vw, 2.1rem);
+    }
 
-.actions {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+    h3 {
+      font-size: 1.08rem;
+    }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 46px;
-  border-radius: 999px;
-  border: 1px solid var(--text);
-  font-weight: 600;
-  font-size: 0.95rem;
-}
+    p {
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
 
-.btn-primary {
-  background: var(--text);
-  color: #fff;
-}
+    .lead {
+      font-size: 1.08rem;
+      color: #4d4d4d;
+      max-width: 62ch;
+    }
 
-.btn-secondary {
-  background: #fff;
-  color: var(--text);
-}
+    .list {
+      margin-top: 28px;
+      display: grid;
+      gap: 14px;
+    }
 
-.site-footer {
-  border-top: 1px solid var(--line);
-  padding: 24px 0;
-}
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: block;
+    }
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+    .item:hover,
+    .item:focus {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: #dcdcdc;
+    }
 
-.footer-links a {
-  color: var(--muted);
-}
+    .item h3 {
+      margin: 0 0 8px;
+    }
 
-.footer-note {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-top: 10px;
-}
-</style>
+    .item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .post-meta {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .section-image {
+      margin-top: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      margin-top: 40px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 20px;
+    }
+
+    .actions {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 46px;
+      border-radius: 999px;
+      border: 1px solid var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0 18px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-1px);
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 34px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus {
+      color: var(--text);
+    }
+
+    .footer-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 760px) {
+      .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Content | Happiness in the Digital Age",
+    "url": "https://happinessinthedigitalage.digital/pages/content.html",
+    "description": "Practical content on AI, digital products, workflows and better online life.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Happiness in the Digital Age",
+      "url": "https://happinessinthedigitalage.digital/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Happiness in the Digital Age Content",
+    "url": "https://happinessinthedigitalage.digital/pages/content.html",
+    "description": "A growing content hub with practical articles on AI, digital products, workflows and better online life.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Happiness in the Digital Age",
+      "url": "https://happinessinthedigitalage.digital/"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Why Most People Never Make Their First Digital Sale (And What Actually Helps)",
+        "url": "https://happinessinthedigitalage.digital/pages/post-first-digital-product.html"
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html" aria-label="Happiness in the Digital Age home">
+        <img src="../assets/images/logo.webp" alt="Happiness in the Digital Age logo" />
+      </a>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="../index.html">
-      <img src="../assets/images/logo.webp" alt="Happiness in the Digital Age logo" />
-    </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="content.html" aria-current="page">Content</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav class="nav">
-      <a class="active" href="content.html">Content</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
-</header>
+  <main class="wrap">
+    <section aria-labelledby="content-title">
+      <span class="eyebrow">Content</span>
+      <h1 id="content-title">Clear ideas for better digital life.</h1>
+      <p class="lead">
+        Practical content about AI, digital products, workflows and better online decisions.
+      </p>
+      <p>
+        This page works as the central content hub of the portal. It gathers articles designed to help you
+        use digital tools with more clarity, make better online decisions and build a more intentional
+        digital life over time.
+      </p>
+      <p>
+        As the site grows, more posts will be added here. For now, the focus is on keeping the structure
+        simple, clear and useful while the content base expands.
+      </p>
 
-<main class="wrap">
+      <div class="list" aria-label="Article list">
+        <a class="item" href="post-first-digital-product.html">
+          <span class="post-meta">Featured article</span>
+          <h3>Why Most People Never Make Their First Digital Sale (And What Actually Helps)</h3>
+          <p>
+            Most first digital products do not fail because of bad ideas. They fail because the path from
+            idea to offer is still too blurry.
+          </p>
+          <p>
+            This article looks at what usually blocks the first sale and what actually helps when you need
+            more clarity, better structure and a more realistic path to getting a digital product into the market.
+          </p>
+        </a>
+      </div>
 
-<span class="eyebrow">Content</span>
-<h1>Clear ideas for better digital work.</h1>
-<p>
-Simple, practical content about AI, digital products and better online decisions.
-</p>
+      <img
+        class="section-image"
+        src="https://happinessinthedigitalage.digital/assets/images/a1.webp"
+        alt="Person working with laptop in a bright clean workspace"
+      />
+    </section>
 
-<div class="list">
-  <a class="item" href="post-first-digital-product.html">
-    <h3>Why Most People Never Make Their First Digital Sale (And What Actually Helps)</h3>
-    <p>Most first digital products do not fail because of bad ideas. They fail because the path from idea to offer is still too blurry.</p>
-  </a>
-</div>
+    <section aria-labelledby="what-content-covers">
+      <div class="panel">
+        <span class="eyebrow">What this content covers</span>
+        <h2 id="what-content-covers">Practical topics for smarter digital decisions.</h2>
+        <p>
+          The content published here is built around practical digital use rather than abstract theory.
+          That includes AI use, digital products, content workflows, online tools and better ways to work
+          and think in the digital environment.
+        </p>
+        <p>
+          The goal is to create a useful archive of articles that stay readable, practical and relevant
+          as the portal grows.
+        </p>
+      </div>
+    </section>
 
-<img
-class="section-image"
-src="https://happinessinthedigitalage.digital/assets/images/a1.webp"
-alt="Person working with laptop in a bright clean workspace"
-/>
+    <section aria-labelledby="next-title">
+      <div class="panel">
+        <span class="eyebrow">Next</span>
+        <h2 id="next-title">Explore products and recommendations.</h2>
+        <p>
+          When you want practical digital resources beyond content, browse the selected products and
+          recommendations available through the portal.
+        </p>
+        <p>
+          You can also visit the about page to understand the broader purpose of the project and how the
+          portal is being structured around practical digital clarity.
+        </p>
 
-<div class="panel">
-<span class="eyebrow">Next</span>
-<h2>Explore products and recommendations.</h2>
-<p>
-When you want practical digital resources beyond content, browse the selected products and recommendations available through the portal.
-</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="products.html">View products</a>
+          <a class="btn btn-secondary" href="about.html">About the portal</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="actions">
-<a class="btn btn-primary" href="products.html">View products</a>
-<a class="btn btn-secondary" href="about.html">About the portal</a>
-</div>
-</div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="content.html" aria-current="page">Content</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+      </nav>
 
-</main>
-
-<footer class="site-footer">
-<div class="wrap">
-<div class="footer-links">
-<a href="content.html">Content</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-</div>
-
-<p class="footer-note">© Happiness in the Digital Age</p>
-</div>
-</footer>
-
+      <p class="footer-note">© Happiness in the Digital Age</p>
+    </div>
+  </footer>
 </body>
 </html>
